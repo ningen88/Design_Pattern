@@ -7,7 +7,7 @@ class Single {
 private:
 	int data = 2;
 
-	Single(){}               // il costrutture è privato, quindi non accessibile dall'esterno
+	Single(){}               // il costrutture Ã¨ privato, quindi non accessibile dall'esterno
 
 	int i_funzione() {      // i_funzione contiene l'implementazione della funzione, anch'essa privata
 
@@ -16,7 +16,7 @@ private:
 
 public:
 	Single(const Single&) = delete;                 // copia non concessa!
-	Single& operator=(const Single& s) = delete;   //? assegnamento non concesso
+	Single& operator=(const Single& s) = delete;   
 
 	static Single& get() {                     //la funzione get ritorna la singola instanza
 		static Single instance;
