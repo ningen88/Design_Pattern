@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(design_pattern)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(SRC
+    ${CMAKE_SOURCE_DIR}/main.cpp
+	${CMAKE_SOURCE_DIR}/newString.cpp
+	${CMAKE_SOURCE_DIR}/test.cpp
+	${CMAKE_SOURCE_DIR}/time.cpp)   
+	
+set(HEADER
+    ${CMAKE_SOURCE_DIR}/builder.h
+	${CMAKE_SOURCE_DIR}/factory.h
+	${CMAKE_SOURCE_DIR}/newString.h
+	${CMAKE_SOURCE_DIR}/observer.h
+	${CMAKE_SOURCE_DIR}/prototype.h
+	${CMAKE_SOURCE_DIR}/single.h
+	${CMAKE_SOURCE_DIR}/test.h
+	${CMAKE_SOURCE_DIR}/time.h
+	${CMAKE_SOURCE_DIR}/toy.h)
+
+add_executable(design_pattern ${SRC} ${HEADER})
